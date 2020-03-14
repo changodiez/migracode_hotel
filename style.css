@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+    float: right;
+    text-decoration: none;
+
+}
+
+li {
+    display: inline-block;
+    
+}
