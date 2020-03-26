@@ -4,10 +4,11 @@
 }
 
 header {
-    background-image: ;
+    background-image: url(/migracode_hotel/img/fondo.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    
 }
 
 ul{
