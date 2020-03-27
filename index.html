@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Migracode Hotel</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="/img/migracode_logo.png">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,24 +19,103 @@
         <div class="logo-left">
             <img src="/img/migracode_logo.png" alt=""></div>
         <nav>
-            <ul>
-                <li><a href="#"> Sign in</a></li>
-                <li><a href="#"> Register</a></li>
-                <li><a href="#"> Services</a></li>
-                <li><a href="#"> Contact</a></li>
-                <select name="Currency" id="Currency">
-                    <option selected value="Euro">euro (€)</option>
-                    <option value="usd">dolar (U$S)</option>
-                    <option value="bitcoin">bitcoin (฿)</option>
-                </select>
-            </ul>
+            <div class="contenedor-nav">
+                <ul>
+                    <div class="enlaces" id="enlaces">
+                        <li><a class="btn-header" href="#"> Sign in</a></li>
+                        <li><a class="btn-header" href="#"> Register</a></li>
+                        <li><a class="btn-header" href="#"> Services</a></li>
+                        <li><a class="btn-header" href="#"> Contact</a></li>
+                        <select class="btn-header" name="Currency" id="Currency">
+                            <option selected value="Euro">euro (€)</option>
+                            <option value="usd">dolar (U$S)</option>
+                            <option value="bitcoin">bitcoin (฿)</option>
+                        </select>
+                    </div>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
+        <div class="background">
+            <div class="contenedor-principal">
+                <div class="menu-principal">
+                    <div class="conteiner-menu">
+                        <div class="title">
+                            <h1>HOTELS, RESORTS, HOSTELS & MORE</h1>
+                            <h2>Find the perfect for you</h2>
+                        </div>
+                        <div class="menu">
+                            <form>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Where are you goin?">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Check-in">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Check-out">
+                                    </div>
+                                    <div class="col">
+                                    </div>
+                                </div>
+                                <div class="form-row" id="second-row">
+                                    <div class="col">
+                                        <label for="adult" class="form-control">Adults</label></div>
+                                    <div class="col">
+                                        <div class="quantity">
+                                            <select class="form-control" id="adult">
+                                                <option>1 </option>
+                                                <option>2 </option>
+                                                <option>3 </option>
+                                                <option>4 </option>
+                                                <option>+4 </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="children" class="form-control">Children</label></div>
+                                    <div class="col">
+                                        <div class="quantity">
+                                            <select class="form-control " id="children">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>+2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="rooms" class="form-control">Rooms</label></div>
+                                    <div class="col">
+                                        <div class="quantity">
+                                            <select class="form-control " id="rooms">
+                                                <option>1 </option>
+                                                <option>2 </option>
+                                                <option>3 </option>
+                                                <option>4 </option>
+                                                <option>+4 </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
 
     </main>
-
 
     <footer class="footer-distributed">
 
