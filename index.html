@@ -11,6 +11,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c67e5dafe1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,11 +27,11 @@
                         <li><a class="btn-header" href="#"> Register</a></li>
                         <li><a class="btn-header" href="#"> Services</a></li>
                         <li><a class="btn-header" href="#"> Contact</a></li>
-                        <select class="btn-header" name="Currency" id="Currency">
-                            <option selected value="Euro">euro (€)</option>
-                            <option value="usd">dolar (U$S)</option>
-                            <option value="bitcoin">bitcoin (฿)</option>
-                        </select>
+                        <li><select class="btn-header form-control" name="Currency" id="Currency">
+                                <option selected value="Euro">euro (€)</option>
+                                <option value="usd">dolar (U$S)</option>
+                                <option value="bitcoin">bitcoin (฿)</option>
+                            </select></li>
                     </div>
                 </ul>
             </div>
@@ -59,48 +60,55 @@
                                         <input type="text" class="form-control" placeholder="Check-out">
                                     </div>
                                     <div class="col">
+                                        <button id="submit">Serch</button>
                                     </div>
                                 </div>
                                 <div class="form-row" id="second-row">
                                     <div class="col">
-                                        <label for="adult" class="form-control">Adults</label></div>
-                                    <div class="col">
-                                        <div class="quantity">
-                                            <select class="form-control" id="adult">
-                                                <option>1 </option>
-                                                <option>2 </option>
-                                                <option>3 </option>
-                                                <option>4 </option>
-                                                <option>+4 </option>
-                                            </select>
-                                        </div>
+                                        <label for="adult" class="form-control">Adults</label>
+                                        <select class="form-control quantity" id="adult">
+                                            <option>1 </option>
+                                            <option>2 </option>
+                                            <option>3 </option>
+                                            <option>4 </option>
+                                            <option>4 + </option>
+                                        </select>
+
                                     </div>
                                     <div class="col">
-                                        <label for="children" class="form-control">Children</label></div>
-                                    <div class="col">
-                                        <div class="quantity">
-                                            <select class="form-control " id="children">
-                                                <option>0</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>+2</option>
-                                            </select>
-                                        </div>
+                                        <label for="children" class="form-control">Children</label>
+
+
+                                        <select class="form-control quantity" id="children">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>2 +</option>
+                                        </select>
+
                                     </div>
                                     <div class="col">
-                                        <label for="rooms" class="form-control">Rooms</label></div>
-                                    <div class="col">
-                                        <div class="quantity">
-                                            <select class="form-control " id="rooms">
-                                                <option>1 </option>
-                                                <option>2 </option>
-                                                <option>3 </option>
-                                                <option>4 </option>
-                                                <option>+4 </option>
-                                            </select>
-                                        </div>
+                                        <label for="rooms" class="form-control">Rooms</label>
+
+
+                                        <select class="form-control quantity" id="rooms">
+                                            <option>1 </option>
+                                            <option>2 </option>
+                                            <option>3 </option>
+                                            <option>4 </option>
+                                            <option>4+ </option>
+                                        </select>
+
                                     </div>
-                                    <div class="col">
+                                    <div class="col" id="check">
+                                        
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    I'm traveling for work
+                                                </label>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -115,7 +123,8 @@
         <div class="cards">
             <div class="card-deck">
                 <div class="card">
-                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/58/99/589939452.jpeg" class="card-img-top" alt="...">
+                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/58/99/589939452.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Hotel Monte Puertatierra</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
@@ -123,8 +132,9 @@
                         <p class="card-text"><small class="text-muted">Cádiz</small></p>
                     </div>
                 </div>
-                <div class="card"> 
-                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/uploadimages/37/31/37316932.jpeg" class="card-img-top" alt="...">
+                <div class="card">
+                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/uploadimages/37/31/37316932.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Hotel Cristina Las Palmas</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional
@@ -133,7 +143,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/52/16/521631046.jpeg" class="card-img-top" alt="...">
+                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/52/16/521631046.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Hotel Termes Montbrió</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -145,7 +156,8 @@
             </div>
             <div class="card-deck">
                 <div class="card">
-                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/32/42/324272532.jpeg" class="card-img-top" alt="...">
+                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/32/42/324272532.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Extremadura Hotel</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
@@ -154,7 +166,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/uploadimages/46/78/46786362.jpeg" class="card-img-top" alt="...">
+                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/uploadimages/46/78/46786362.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Sercotel Ciudad de Oviedo</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional
@@ -163,7 +176,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/27/41/274172876.jpeg" class="card-img-top" alt="...">
+                    <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/partnerimages/27/41/274172876.jpeg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Hotel Sorli Emocions</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to

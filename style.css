@@ -5,6 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.full_container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 /*/////////////////////////////////HEADER////////////////////////////////////////*/
 
 header {
@@ -80,6 +85,15 @@ li {
 
 }
 
+#Currency {
+width: 70%;
+font-size: small;
+}
+
+
+
+
+
 /*/////////////////////////////////MAIN MENU////////////////////////////////////////*/
 
 .background {
@@ -105,7 +119,7 @@ li {
 }
 
 .menu-principal {
-    width: 80%;
+    width: 75%;
     
 }
 
@@ -118,23 +132,125 @@ li {
     justify-content: center;
     border-radius: 15px;
 }
+.conteiner-menu .title {
+    padding-bottom: 15px;
 
+}
+
+/*/////////////////////////////////FORM////////////////////////////////////////*/
+
+form {
+    padding: 5px;
+    width: 100%;
+}
+
+.form-row {
+    width: 100%;
+    padding-bottom: 5px;
+    justify-content: space-between;
+}
+
+.col {
+    padding: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.col input {
+    width: 90%;
+}
 #second-row {
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+    }
+
+#second-row .col {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .quantity {
-    width: 35%;
+    width: 25%;
 }
 
 #second-row label {
-    align-content: center;
-    justify-items: center;
-    justify-content: center;
-
+    width: 50%;
+    
 }
 
+#submit {
+    width: 80%;
+    border-radius: 3px;
+    background-color: #33383b;
+    color: #ffffff;
+    border: 0;
+    padding: 15px 50px;
+    font-weight: bold;
+    float: right;
+}
+
+#check {
+    align-self: center;
+    
+}
+
+#check .form-check {
+   width: 100%;
+    
+}
+
+#check input {
+    width: 10%;
+    
+}
+
+#check label {
+    width: 90%;    
+    
+}
+
+     
+    
+    @media (max-width: 1000px ) {
+    
+        form {
+            flex-direction: row;
+            display: flex;
+        }
+        .form-row {
+            flex-direction: column;
+        }
+
+        .col {
+            padding: 5px;
+            margin-right: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 80%;
+            
+        }
+    
+    }
+
+    @media (max-width: 800px) {
+    
+        form {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .form-row {
+            flex-direction: column;
+        }
+
+        
+    
+    }
 /*/////////////////////////////////CARDS////////////////////////////////////////*/
 
 .cards {
@@ -145,6 +261,10 @@ padding: 30px;
     padding-bottom: 30px;
 }
 
+.card img {
+    max-height: 250px;
+    
+}
 /*///////////////////////////////// FOOTER///////////////////////////////////////////*/
 
 .footer-distributed {
