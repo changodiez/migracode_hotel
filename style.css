@@ -90,7 +90,48 @@ width: 70%;
 font-size: small;
 }
 
+@media (max-width: 800px) {
+    
 
+    header {
+    height: 20vh;
+    position: absolute;
+    
+    }
+
+    .logo-left img {
+        width: 50%;
+        padding-top: 15px;
+        margin-left: 25%;
+        margin-right: 25%;
+        max-height: 80.27px;
+        max-width: 222.25px;
+        
+    }
+
+    .logo-left {
+        width: 85%;
+        align-items: center;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    
+    }
+
+    nav {
+        width: 80%;
+        padding-top: 2%;
+        justify-content: space-between;
+        align-items: center;        
+    
+    }
+
+    
+
+}
 
 
 
@@ -246,9 +287,18 @@ form {
 
         .form-row {
             flex-direction: column;
+            align-items: center;
         }
 
+        .conteiner-menu {
+            margin-top: 20vh;
+            
+        }
+        .conteiner-menu .title {
+            padding-bottom: 15px;
+            text-align: center;
         
+        }
     
     }
 /*/////////////////////////////////CARDS////////////////////////////////////////*/
