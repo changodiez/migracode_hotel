@@ -513,7 +513,7 @@ section {
     font-weight: normal;
     color: #d1d2d2;
 
-    width: 400px;
+    width: 100%;
     padding: 18px;
 }
 
@@ -533,12 +533,13 @@ section {
 
 .footer-distributed form input {
     height: 55px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .footer-distributed form textarea {
     height: 100px;
     margin-bottom: 20px;
+    
 }
 
 .footer-distributed form button {
@@ -546,12 +547,15 @@ section {
     background-color: #33383b;
     color: #ffffff;
     border: 0;
-    padding: 15px 50px;
+    padding: 15px 0;
     font-weight: bold;
+    width: 30%;
     float: right;
+    
+    
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* ////////////////////////////////////RESPONSIVE FOOTER////////////////////////////////////// */
 
 @media (max-width: 1000px) {
 
