@@ -16,6 +16,84 @@
 </head>
 
 <body>
+
+    <!---------------------------- Modal SIGN IN  -------------------------------------->
+    <div class="modal fade" id="signIn_in" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="InputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword1">Password</label>
+                            <input type="password" class="form-control" id="InputPassword"
+                                aria-describedby="passwordHelp">
+                            <small id="passwordHelp" class="form-text text-muted">Do you forgot your password? Click <a
+                                    href="#">here</a>.</small>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------Modal REGISTER------------------ -->
+    <div class="modal fade" id="register_in" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Email" id="InputEmail1">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="password" class="form-control" placeholder="Password" id="InputPassword1">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------------------HEADER--------------------->
     <header class="header-nav">
         <div class="logo-left">
             <img src="/img/migracode_logo.png" alt=""></div>
@@ -23,8 +101,14 @@
             <div class="contenedor-nav">
                 <ul>
                     <div class="enlaces" id="enlaces">
-                        <li><a class="btn-header" href="#"> Sign in</a></li>
-                        <li><a class="btn-header" href="#"> Register</a></li>
+                        <li><button type="button" class="modal-btn" id="signIn" data-toggle="modal"
+                                data-target="#signIn_in">
+                                Sign In
+                            </button></li>
+                        <li><button type="button" class="modal-btn" id="register" data-toggle="modal"
+                                data-target="#register_in">
+                                Register
+                            </button></li>
                         <li><a class="btn-header" href="#"> Services</a></li>
                         <li><a class="btn-header" href="#"> Contact</a></li>
                         <li><select class="btn-header form-control" name="Currency" id="Currency">
@@ -54,7 +138,7 @@
                                         <input type="text" class="form-control" placeholder="Where are you goin?">
                                     </div>
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder="Check-in">
+                                        <input type="text" class="form-control" id="datepicker" placeholder="Check-in">
                                     </div>
                                     <div class="col">
                                         <input type="text" class="form-control" placeholder="Check-out">
@@ -101,13 +185,13 @@
 
                                     </div>
                                     <div class="col" id="check">
-                                        
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                    I'm traveling for work
-                                                </label>
-                                            
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                I'm traveling for work
+                                            </label>
+
                                         </div>
                                     </div>
                                 </div>
@@ -240,8 +324,16 @@
 
 
 
-
-
+    <script src="/javas.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
 
 </body>

@@ -18,6 +18,7 @@ header {
     display: flex;
     position: absolute;
     height: 10vh;
+    padding: 1rem 0;
 
 
 
@@ -34,7 +35,7 @@ header {
 }
 
 nav {
-    width: 30%;
+    width: 50%;
     padding-top: 2%;
     justify-content: space-between;
     align-items: center;
@@ -52,11 +53,24 @@ nav {
     margin: 15px;
 }
 
+
+
+header nav ul {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header nav li {
+    display: inline-block;
+
+}
+
 header nav li a {
     text-decoration: none;
     color: seashell;
     align-items: center;
-    display: inline-block;
+    display: block;
     padding: 5px 0;
     margin-right: 17px;
     font-size: 17px;
@@ -73,30 +87,64 @@ header nav li a:hover {
 
 }
 
-ul {
-    list-style: none;
-    float: right;
-    text-decoration: none;
-
-}
-
-li {
-    display: inline-block;
-
-}
-
 #Currency {
-width: 70%;
-font-size: small;
+    width: 70%;
+    font-size: small;
 }
 
+.modal-btn {
+    text-decoration: none;
+    color: seashell;
+    align-items: center;
+    display: block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-size: 17px;
+    font-weight: 300;
+    border-bottom: 3px solid transparent;
+    background: none;
+    border: 0;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    -webkit-user-select: none;
+    /* for button */
+    -webkit-appearance: button;
+    /* for input */
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.modal-btn:hover {
+    border-bottom: 1px solid rgb(175, 174, 172);
+    transition: 0.6s;
+    text-decoration: none;
+    color: seashell;
+
+}
+
+#InputEmail {
+    width: 90%;
+}
+
+#InputPassword{
+    width: 90%;
+}
+#InputEmail1 {
+    width: 90%;
+}
+
+#InputPassword1{
+    width: 90%;
+}
 @media (max-width: 800px) {
-    
+
 
     header {
-    height: 20vh;
-    position: absolute;
-    
+        height: 20vh;
+        position: absolute;
+
     }
 
     .logo-left img {
@@ -106,7 +154,7 @@ font-size: small;
         margin-right: 25%;
         max-height: 80.27px;
         max-width: 222.25px;
-        
+
     }
 
     .logo-left {
@@ -118,18 +166,18 @@ font-size: small;
         display: flex;
         flex-direction: column;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-    
+
     }
 
     nav {
         width: 80%;
         padding-top: 2%;
         justify-content: space-between;
-        align-items: center;        
-    
+        align-items: center;
+
     }
 
-    
+
 
 }
 
@@ -161,18 +209,19 @@ font-size: small;
 
 .menu-principal {
     width: 75%;
-    
+
 }
 
 .conteiner-menu {
     width: 70vw;
-    background-color:  rgba(175, 174, 172, 0.671);
+    background-color: rgba(175, 174, 172, 0.671);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     padding: 20px;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
 }
+
 .conteiner-menu .title {
     padding-bottom: 15px;
 
@@ -197,16 +246,17 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
 .col input {
     width: 90%;
 }
+
 #second-row {
     width: 100%;
     justify-content: space-between;
-    }
+}
 
 #second-row .col {
     display: flex;
@@ -220,7 +270,7 @@ form {
 
 #second-row label {
     width: 50%;
-    
+
 }
 
 #submit {
@@ -236,85 +286,106 @@ form {
 
 #check {
     align-self: center;
-    
+
 }
 
 #check .form-check {
-   width: 100%;
-    
+    width: 100%;
+
 }
 
 #check input {
     width: 10%;
-    
+
 }
 
 #check label {
-    width: 90%;    
-    
+    width: 90%;
+
 }
 
-     
-    
-    @media (max-width: 1000px ) {
-    
-        form {
-            flex-direction: row;
-            display: flex;
-        }
-        .form-row {
-            flex-direction: column;
-        }
 
-        .col {
-            padding: 5px;
-            margin-right: 5px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            max-width: 80%;
-            
-        }
-    
+
+@media (max-width: 1000px) {
+
+    form {
+        flex-direction: row;
+        display: flex;
     }
 
-    @media (max-width: 800px) {
-    
-        form {
-            flex-direction: column;
-            display: flex;
-        }
-
-        .form-row {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .conteiner-menu {
-            margin-top: 20vh;
-            
-        }
-        .conteiner-menu .title {
-            padding-bottom: 15px;
-            text-align: center;
-        
-        }
-    
+    .form-row {
+        flex-direction: column;
     }
+
+    .col {
+        padding: 5px;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 80%;
+
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    form {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteiner-menu {
+        margin-top: 20vh;
+
+    }
+
+    .conteiner-menu .title {
+        padding-bottom: 15px;
+        text-align: center;
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .conteiner-menu .title h1 {
+        font-size: medium;
+
+    }
+
+    .conteiner-menu .title h2 {
+        font-size: medium;
+
+    }
+
+}
+
 /*/////////////////////////////////CARDS////////////////////////////////////////*/
 
 .cards {
-padding: 30px;
+    padding: 30px;
 
 }
+
 .card-deck {
     padding-bottom: 30px;
 }
 
 .card img {
     max-height: 250px;
+    object-fit: cover;
+    object-position: center;
     
 }
+
 /*///////////////////////////////// FOOTER///////////////////////////////////////////*/
 
 .footer-distributed {
@@ -537,5 +608,26 @@ section {
         width: 80%;
         height: auto;
 
+    }
+}
+
+@media (max-width: 500px) {
+
+    .footer-left {
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .footer-left img {
+        margin: 0 auto;
+    }
+
+    .footer-links {
+        justify-content: space-around;
+        color: salmon;
+    }
+
+    .footer-icons {
+        margin: 0 auto;
     }
 }
